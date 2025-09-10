@@ -1,10 +1,10 @@
 ﻿namespace MyFirstMauiMobileApp
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPageOld : ContentPage
     {
         int count = 0;
 
-        public MainPage()
+        public MainPageOld()
         {
             InitializeComponent();
         }
@@ -13,7 +13,7 @@
         {
             count++;
 
-            if (count == 1)
+            if (count == 0)
                 CounterBtn.Text = $"Clicked {count} time";
             else
                 CounterBtn.Text = $"Clicked {count} times";
