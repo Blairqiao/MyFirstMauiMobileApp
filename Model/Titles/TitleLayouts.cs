@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstMauiMobileApp.Model.Titles
 {
-    public class TitleMain
+    class TitleLayouts
     {
-
-        public static string Title { get; } = "Main Menu";
-
-        public static string Layouts { get; } = "Layouts Menu";
-
     }
 }

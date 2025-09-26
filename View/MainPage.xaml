@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMauiMobileApp.View.MainPage"
-             Title="MainPage">
+             Title="{Binding Title}">
 
     <VerticalStackLayout>
 
@@ -21,8 +21,9 @@
 
             <Button Grid.Row="0" 
                     Grid.Column="0" 
-                    Text="Layouts"
-                    Style="{StaticResource TileButton}" />
+                    Text="{Binding Layouts}"
+                    Style="{StaticResource TileButton}" 
+                    Command="{Binding OnLayoutsClicked}"/>
 
             <Button Grid.Row="0" 
                     Grid.Column="1" 
