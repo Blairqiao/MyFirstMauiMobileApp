@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMauiMobileApp.View.LayoutsPage"
-             Title="LayoutsPage">
+             Title= "{Binding Title}">
 
     <VerticalStackLayout>
 
-        <Grid Margin = "5, 30, 5, 0" >
+        <Grid Padding ="10" Margin = "0, 15, 0, 0" >
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -20,27 +20,27 @@
             </Grid.ColumnDefinitions>
 
             <Button Grid.Row="0" 
-                Grid.Column="0" 
-                Text="Stack Layout"
-                Style="{StaticResource LayoutButton}" 
-                Command="{Binding OnLayoutsClicked}"/>
+                    Grid.Column="0" 
+                    Text="{Binding Stack_Layout}"
+                    Style="{StaticResource TileButton}" 
+                    Command="{Binding OnLayoutsClicked}"/>
 
             <Button Grid.Row="0" 
-                Grid.Column="1" 
-                Text="Absolute Layout"
-                Style="{StaticResource LayoutButton}" />
+                    Grid.Column="1" 
+                    Text="{Binding Absolute_Layout}"
+                    Style="{StaticResource TileButton}" />
 
             <Button Grid.Row="1" 
-                Grid.Column="0" 
-                Grid.ColumnSpan="2"
-                Text="Vertical Stack"
-                Style="{StaticResource LayoutButton}" />
+                    Grid.Column="0" 
+                    Grid.ColumnSpan="2"
+                    Text="{Binding Vertical_Stack}"
+                    Style="{StaticResource TileButton}" />
 
             <Button Grid.Row="2" 
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                Text="Horizontal Stack"
-                Style="{StaticResource LayoutButton}" />
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding Horizontal_Stack}"
+                    Style="{StaticResource TileButton}" />
 
         </Grid>
 

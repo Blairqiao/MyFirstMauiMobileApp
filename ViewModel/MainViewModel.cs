@@ -13,13 +13,17 @@ namespace MyFirstMauiMobileApp.ViewModel
     {
 
         public string Layouts { get; set; } = TitleMain.Layouts;
+        public string Images { get; set; } = TitleMain.Images;
+        public string Collections { get; set; } = TitleMain.Collections;
+        public string Controls { get; set; } = TitleMain.Controls;
+        public string SQL_Lite { get; set; } = TitleMain.SQL_Lite;
 
         public ICommand OnLayoutsClicked { get; set; }
-        public MainViewModel() {
+        public MainViewModel() 
+        {
         
             Title = TitleMain.Title;
 
-            //commands
             OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
 
         }

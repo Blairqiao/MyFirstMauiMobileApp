@@ -6,6 +6,7 @@ namespace MyFirstMauiMobileApp
     {
         public App()
         {
+            
             InitializeComponent();
 
             //MainPage = new AppShell();
