@@ -22,8 +22,7 @@
             <Button Grid.Row="0" 
                     Grid.Column="0" 
                     Text="{Binding Stack_Layout}"
-                    Style="{StaticResource TileButton}" 
-                    Command="{Binding OnLayoutsClicked}"/>
+                    Style="{StaticResource TileButton}"/>
 
             <Button Grid.Row="0" 
                     Grid.Column="1" 

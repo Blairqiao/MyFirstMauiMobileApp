@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommunityToolkit.Mvvm.ComponentModel;
 using MyFirstMauiMobileApp.Model.Titles;
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
-    class LayoutsViewModel : BaseViewModel
+    class LayoutsViewModel : ObservableObject
     {
-        public string Stack_Layout { get; set; } = TitleLayouts.Stack_Layout;
-        public string Absolute_Layout { get; set; } = TitleLayouts.Absolute_Layout;
-        public string Vertical_Stack { get; set; } = TitleLayouts.Vertical_Stack;
-        public string Horizontal_Stack { get; set; } = TitleLayouts.Horizontal_Stack;
+        [ObservableProperty]
+        public string title = TitleLayouts.LayoutsTitle;
+        [ObservableProperty]
+        private string stack_layout = TitleLayouts.Stack_Layout;
+        [ObservableProperty]
+        public string absolute_layout = TitleLayouts.Absolute_Layout;
+        [ObservableProperty]
+        public string verticale_stack = TitleLayouts.Vertical_Stack;
+        [ObservableProperty]
+        public string horizontal_stack = TitleLayouts.Horizontal_Stack;
 
         public LayoutsViewModel() 
         {
 
-            Title = TitleLayouts.LayoutsTitle;
         
         }
     }

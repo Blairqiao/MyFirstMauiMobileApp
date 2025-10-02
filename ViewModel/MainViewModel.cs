@@ -1,4 +1,6 @@
-﻿using MyFirstMauiMobileApp.Model.Titles;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using MyFirstMauiMobileApp.Model.Titles;
 using MyFirstMauiMobileApp.View;
 using System;
 using System.Collections.Generic;
@@ -9,28 +11,33 @@ using System.Windows.Input;
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
-    public class MainViewModel : BaseViewModel
+    public class MainViewModel : ObservableObject
     {
 
-        public string Layouts { get; set; } = TitleMain.Layouts;
-        public string Images { get; set; } = TitleMain.Images;
-        public string Collections { get; set; } = TitleMain.Collections;
-        public string Controls { get; set; } = TitleMain.Controls;
-        public string SQL_Lite { get; set; } = TitleMain.SQL_Lite;
+        [ObservableProperty]
+        private string title = TitleMain.Title;
+        [ObservableProperty]
+        private string layouts = TitleMain.Layouts;
+        [ObservableProperty]
+        private string images = TitleMain.Images;
+        [ObservableProperty]
+        private string collections = TitleMain.Collections;
+        [ObservableProperty]
+        private string controls = TitleMain.Controls;
+        [ObservableProperty]
+        private string sql_lite = TitleMain.SQL_Lite;
 
-        public ICommand OnLayoutsClicked { get; set; }
+        //public ICommand OnLayoutsClicked { get; set; }
+
         public MainViewModel() 
         {
         
-            Title = TitleMain.Title;
-
-            OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
-
         }
 
-        private async void OnLayoutsClickedAsync()
+        [RelayCommand]
+        private async void LayoutsClicked()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
+            await Shell.Current.GoToAsync(nameof(LayoutsPage));
         }
 
     }
