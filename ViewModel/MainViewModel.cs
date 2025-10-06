@@ -2,16 +2,10 @@
 using CommunityToolkit.Mvvm.Input;
 using MyFirstMauiMobileApp.Model.Titles;
 using MyFirstMauiMobileApp.View;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
-    public class MainViewModel : ObservableObject
+    public partial class MainViewModel : ObservableObject
     {
 
         [ObservableProperty]
@@ -25,7 +19,7 @@ namespace MyFirstMauiMobileApp.ViewModel
         [ObservableProperty]
         private string controls = TitleMain.Controls;
         [ObservableProperty]
-        private string sql_lite = TitleMain.SQL_Lite;
+        private string sQL_Lite = TitleMain.SQL_Lite;
 
         //public ICommand OnLayoutsClicked { get; set; }
 
@@ -35,7 +29,7 @@ namespace MyFirstMauiMobileApp.ViewModel
         }
 
         [RelayCommand]
-        private async void LayoutsClicked()
+        private async Task LayoutsClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutsPage));
         }

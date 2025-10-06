@@ -8,18 +8,20 @@ using MyFirstMauiMobileApp.Model.Titles;
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
-    class LayoutsViewModel : ObservableObject
+    public partial class LayoutsViewModel : ObservableObject
     {
         [ObservableProperty]
-        public string title = TitleLayouts.LayoutsTitle;
+        private string title = TitleLayouts.LayoutsTitle;
         [ObservableProperty]
-        private string stack_layout = TitleLayouts.Stack_Layout;
+        private string stack_Layout = TitleLayouts.Stack_Layout;
         [ObservableProperty]
-        public string absolute_layout = TitleLayouts.Absolute_Layout;
+        private string absolute_Layout = TitleLayouts.Absolute_Layout;
         [ObservableProperty]
-        public string verticale_stack = TitleLayouts.Vertical_Stack;
+        private string vertical_Stack = TitleLayouts.Vertical_Stack;
         [ObservableProperty]
-        public string horizontal_stack = TitleLayouts.Horizontal_Stack;
+        private string horizontal_Stack = TitleLayouts.Horizontal_Stack;
+        [ObservableProperty]
+        private string flex_Layout = TitleLayouts.Flex_Layout;
 
         public LayoutsViewModel() 
         {

@@ -12,6 +12,7 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -22,24 +23,30 @@
             <Button Grid.Row="0" 
                     Grid.Column="0" 
                     Text="{Binding Stack_Layout}"
-                    Style="{StaticResource TileButton}"/>
+                    Style="{StaticResource LayoutButton}"/>
 
             <Button Grid.Row="0" 
                     Grid.Column="1" 
                     Text="{Binding Absolute_Layout}"
-                    Style="{StaticResource TileButton}" />
+                    Style="{StaticResource LayoutButton}" />
 
             <Button Grid.Row="1" 
                     Grid.Column="0" 
                     Grid.ColumnSpan="2"
                     Text="{Binding Vertical_Stack}"
-                    Style="{StaticResource TileButton}" />
+                    Style="{StaticResource LayoutButton}" />
 
             <Button Grid.Row="2" 
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding Horizontal_Stack}"
-                    Style="{StaticResource TileButton}" />
+                    Style="{StaticResource LayoutButton}" />
+
+            <Button Grid.Row="3" 
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding Flex_Layout}"
+                    Style="{StaticResource LayoutButton}" />
 
         </Grid>
 
