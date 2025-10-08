@@ -12,7 +12,11 @@ namespace MyFirstMauiMobileApp
 
         public void RegisterRouting()
         {
+            //Layouts
             Routing.RegisterRoute(nameof(LayoutsPage), typeof(LayoutsPage));
+
+            //Layouts Children
+            Routing.RegisterRoute(nameof(LayoutsStackPage), typeof(LayoutsStackPage));
         }
     }
 }

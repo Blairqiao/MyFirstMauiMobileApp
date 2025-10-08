@@ -23,7 +23,8 @@
             <Button Grid.Row="0" 
                     Grid.Column="0" 
                     Text="{Binding Stack_Layout}"
-                    Style="{StaticResource LayoutButton}"/>
+                    Style="{StaticResource LayoutButton}"
+                    Command="{Binding StackLayoutClickedCommand}"/>
 
             <Button Grid.Row="0" 
                     Grid.Column="1" 
