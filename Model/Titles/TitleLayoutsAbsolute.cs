@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyFirstMauiMobileApp.Model.Titles
 {
-    public class TitleLayoutsStack
+    public class TitleLayoutsAbsolute
     {
 
-        public static string Title { get; } = "Stack Layout";
+        public static string Title { get; } = "Absolute Layout";
 
     }
 }

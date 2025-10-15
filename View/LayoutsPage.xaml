@@ -29,23 +29,25 @@
             <Button Grid.Row="0" 
                     Grid.Column="1" 
                     Text="{Binding Absolute_Layout}"
-                    Style="{StaticResource LayoutButton}" />
+                    Style="{StaticResource LayoutButton}" 
+                    Command="{Binding AbsoluteLayoutClickedCommand}"/>
 
             <Button Grid.Row="1" 
-                    Grid.Column="0" 
-                    Grid.ColumnSpan="2"
+                    Grid.Column="1" 
                     Text="{Binding Vertical_Stack}"
-                    Style="{StaticResource LayoutButton}" />
+                    Style="{StaticResource LayoutButton}" 
+                    Command="{Binding VerticalStackClickedCommand}"/>
 
             <Button Grid.Row="2" 
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
+                    Grid.Column="1"
                     Text="{Binding Horizontal_Stack}"
-                    Style="{StaticResource LayoutButton}" />
+                    Style="{StaticResource LayoutButton}"
+                    Command="{Binding HorizontalStackClickedCommand}"/>
 
-            <Button Grid.Row="3" 
+            <Button Grid.Row="1" 
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
+                    Grid.RowSpan="2"
+                    HeightRequest="106"
                     Text="{Binding Flex_Layout}"
                     Style="{StaticResource LayoutButton}" />
 

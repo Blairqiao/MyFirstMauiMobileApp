@@ -1,4 +1,5 @@
 ﻿using MyFirstMauiMobileApp.View;
+using MyFirstMauiMobileApp.ViewModel;
 
 namespace MyFirstMauiMobileApp
 {
@@ -17,6 +18,10 @@ namespace MyFirstMauiMobileApp
 
             //Layouts Children
             Routing.RegisterRoute(nameof(LayoutsStackPage), typeof(LayoutsStackPage));
+            Routing.RegisterRoute(nameof(LayoutsVerticalStackPage), typeof(LayoutsVerticalStackPage));
+            Routing.RegisterRoute(nameof(LayoutsHorizontalStackPage), typeof(LayoutsHorizontalStackPage));
+            Routing.RegisterRoute(nameof(LayoutsAbsolutePage), typeof(LayoutsAbsolutePage));
+
         }
     }
 }

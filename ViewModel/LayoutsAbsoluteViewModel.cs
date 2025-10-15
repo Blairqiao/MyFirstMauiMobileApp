@@ -8,17 +8,16 @@ using System.Threading.Tasks;
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
-    partial class LayoutsStackViewModel : ObservableObject
+    partial class LayoutsAbsoluteViewModel : ObservableObject
     {
 
         [ObservableProperty]
-        private string title = TitleLayoutsStack.Title;
+        private string title = TitleLayoutsAbsolute.Title;
 
-        public LayoutsStackViewModel() 
+        public LayoutsAbsoluteViewModel()
         {
-        
+
         }
 
     }
-
 }

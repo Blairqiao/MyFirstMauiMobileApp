@@ -14,7 +14,7 @@ namespace MyFirstMauiMobileApp.ViewModel
     {
 
         [ObservableProperty]
-        private string title = TitleLayouts.LayoutsTitle;
+        private string title = TitleLayouts.Title;
         [ObservableProperty]
         private string stack_Layout = TitleLayouts.Stack_Layout;
         [ObservableProperty]
@@ -31,6 +31,24 @@ namespace MyFirstMauiMobileApp.ViewModel
         private async Task StackLayoutClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutsStackPage));
+        }
+
+        [RelayCommand]
+        private async Task VerticalStackClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsVerticalStackPage));
+        }
+
+        [RelayCommand]
+        private async Task HorizontalStackClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsHorizontalStackPage));
+        }
+
+        [RelayCommand]
+        private async Task AbsoluteLayoutClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsAbsolutePage));
         }
 
         public LayoutsViewModel() 
