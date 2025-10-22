@@ -1,4 +1,4 @@
-﻿using MyFirstMauiMobileApp.View;
+﻿
 
 namespace MyFirstMauiMobileApp
 {

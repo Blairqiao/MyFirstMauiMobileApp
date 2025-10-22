@@ -1,5 +1,4 @@
 ﻿using MyFirstMauiMobileApp.View;
-using MyFirstMauiMobileApp.ViewModel;
 
 namespace MyFirstMauiMobileApp
 {

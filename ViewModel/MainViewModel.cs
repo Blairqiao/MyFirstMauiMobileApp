@@ -21,8 +21,6 @@ namespace MyFirstMauiMobileApp.ViewModel
         [ObservableProperty]
         private string sQL_Lite = TitleMain.SQL_Lite;
 
-        //public ICommand OnLayoutsClicked { get; set; }
-
         public MainViewModel() 
         {
         
