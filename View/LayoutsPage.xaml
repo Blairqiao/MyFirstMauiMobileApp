@@ -49,7 +49,8 @@
                     Grid.RowSpan="2"
                     HeightRequest="106"
                     Text="{Binding Flex_Layout}"
-                    Style="{StaticResource LayoutButton}" />
+                    Style="{StaticResource LayoutButton}"
+                    Command="{Binding FlexLayoutClickedCommand}"/>
 
         </Grid>
 

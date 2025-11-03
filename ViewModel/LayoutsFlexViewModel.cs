@@ -3,12 +3,12 @@ using MyFirstMauiMobileApp.Model.Titles;
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
-    partial class LayoutsAbsoluteViewModel : ObservableObject
+    internal class LayoutsFlexViewModel : ObservableObject
     {
 
-        public string Title => TitleLayoutsAbsolute.Title;
+        public string Title => TitleLayoutsFlex.Title;
 
-        public LayoutsAbsoluteViewModel()
+        public LayoutsFlexViewModel()
         {
 
         }

@@ -20,6 +20,7 @@ namespace MyFirstMauiMobileApp
             Routing.RegisterRoute(nameof(LayoutsVerticalStackPage), typeof(LayoutsVerticalStackPage));
             Routing.RegisterRoute(nameof(LayoutsHorizontalStackPage), typeof(LayoutsHorizontalStackPage));
             Routing.RegisterRoute(nameof(LayoutsAbsolutePage), typeof(LayoutsAbsolutePage));
+            Routing.RegisterRoute(nameof(LayoutsFlexPage), typeof(LayoutsFlexPage));
 
         }
     }

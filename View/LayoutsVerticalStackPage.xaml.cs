@@ -8,6 +8,5 @@ public partial class LayoutsVerticalStackPage : ContentPage
 	{
 		InitializeComponent();
         BindingContext = new LayoutsVerticalStackViewModel();
-
     }
 }
