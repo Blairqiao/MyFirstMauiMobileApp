@@ -33,25 +33,33 @@
 
         <Label Text="01"
                TextColor="White"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.05, 0.2, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="02"
                TextColor="Snow"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.35, 0.2, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="03"
                TextColor="Maroon"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.65, 0.2, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="04"
                TextColor="Purple"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.95, 0.2, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
@@ -75,25 +83,33 @@
 
         <Label Text="05"
                TextColor="Green"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+FontSize="30"
+FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.05, 0.3, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="06"
                TextColor="Ivory"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.35, 0.3, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="07"
                TextColor="GhostWhite"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.65, 0.3, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="08"
                TextColor="Yellow"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.95, 0.3, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
@@ -117,25 +133,33 @@
 
         <Label Text="09"
                TextColor="Red"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.05, 0.4, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="10"
                TextColor="OrangeRed"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.35, 0.4, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="11"
                TextColor="LightBlue"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.65, 0.4, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
 
         <Label Text="12"
                TextColor="Cyan"
-               Style="{StaticResource AbsoluteLayoutText}"
+               HorizontalTextAlignment="Center"
+               FontSize="30"
+               FontAttributes="Bold"
                AbsoluteLayout.LayoutBounds="0.95, 0.4, 0.2, 0.06"
                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
     </AbsoluteLayout>

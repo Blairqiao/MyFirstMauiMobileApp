@@ -22,6 +22,14 @@ namespace MyFirstMauiMobileApp
             Routing.RegisterRoute(nameof(LayoutsAbsolutePage), typeof(LayoutsAbsolutePage));
             Routing.RegisterRoute(nameof(LayoutsFlexPage), typeof(LayoutsFlexPage));
 
+            //Images
+            Routing.RegisterRoute(nameof(ImagesPage), typeof(ImagesPage));
+
+            //Images Children
+            Routing.RegisterRoute(nameof(ImagesURIPage), typeof(ImagesURIPage));
+            Routing.RegisterRoute(nameof(ImagesEmbeddedPage), typeof(ImagesEmbeddedPage));
+            Routing.RegisterRoute(nameof(ImagesActivityIndicatorPage), typeof(ImagesActivityIndicatorPage));
+
         }
     }
 }
