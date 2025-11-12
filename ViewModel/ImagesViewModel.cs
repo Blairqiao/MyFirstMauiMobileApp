@@ -14,7 +14,6 @@ namespace MyFirstMauiMobileApp.ViewModel
         public string Embedded => TitleImages.Embedded;
         public string ActivityIndicator => TitleImages.ActivityIndicator;
 
-
         [RelayCommand]
         private async Task URIClicked()
         {

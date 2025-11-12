@@ -15,7 +15,7 @@
 
         <Image Source="{Binding LoadedImage}"
                IsVisible="{Binding IsImageVisible}"
-               Aspect="AspectFit"
+               Aspect="Fill"
                VerticalOptions="Center"
                HorizontalOptions="Center"/>
 
