@@ -38,5 +38,10 @@ namespace MyFirstMauiMobileApp.ViewModel
             await Shell.Current.GoToAsync(nameof(ImagesPage));
         }
 
+        [RelayCommand]
+        private async Task CollectionsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(CollectionsMenuPage));
+        }
     }
 }

@@ -51,6 +51,7 @@ namespace MyFirstMauiMobileApp.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(LayoutsFlexPage));
         }
+
         public LayoutsViewModel() 
         {
 
