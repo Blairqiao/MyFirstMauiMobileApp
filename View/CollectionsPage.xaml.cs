@@ -1,3 +1,5 @@
+using MyFirstMauiMobileApp.ViewModel;
+
 namespace MyFirstMauiMobileApp.View;
 
 public partial class CollectionsPage : ContentPage
@@ -5,5 +7,6 @@ public partial class CollectionsPage : ContentPage
 	public CollectionsPage()
 	{
 		InitializeComponent();
+		BindingContext = new CollectionsViewModel();
 	}
 }
