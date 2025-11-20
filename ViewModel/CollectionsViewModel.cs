@@ -10,12 +10,9 @@ namespace MyFirstMauiMobileApp.ViewModel;
 public partial class CollectionsViewModel : ObservableObject
 {
     private List<MarvelMovies> _marvelmovies;
-    public string title => TitleCollections.Title;
+    public string Title => TitleCollections.Title;
 
-    //= new() -> constructs an empty ObservableCollection<MarvelMovies>
-    //and assigns it to the property — using the target-typed new() shorthand.
-    //Same as -> ObservableCollection<MarvelMovies> MarvelMoviesCollection =
-    //  new ObservableCollection<MarvelMovies>();
+
     public ObservableCollection<MarvelMovies> MarvelMoviesCollection { get; } = new();
 
     public CollectionsViewModel()

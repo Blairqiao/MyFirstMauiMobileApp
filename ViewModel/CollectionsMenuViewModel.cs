@@ -9,6 +9,7 @@ namespace MyFirstMauiMobileApp.ViewModel
     public partial class CollectionsMenuViewModel : ObservableObject
     {
 
+        public string Title => TitleCollectionsMenu.Title;
         public string Collection => TitleCollectionsMenu.Collection;
         public string CollectionImage => TitleCollectionsMenu.CollectionImage;
         public string CollectionButton => TitleCollectionsMenu.CollectionButton;

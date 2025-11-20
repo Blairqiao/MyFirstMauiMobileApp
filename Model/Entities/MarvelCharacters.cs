@@ -28,8 +28,8 @@ public class MarvelCharacters
     public static List<MarvelCharacters> GetMovies() => new List<MarvelCharacters>
     {
         new MarvelCharacters("Chris Pratt", "Starlord", "starlord.png"),
-        new MarvelCharacters("Zoe Saldana", "Gamora", "groot.png"),
-        new MarvelCharacters("VinDiesel", "Groot", "nebula.png"),
+        new MarvelCharacters("Zoe Saldana", "Gamora", "gamora.png"),
+        new MarvelCharacters("VinDiesel", "Groot", "groot.png"),
         new MarvelCharacters("Bradley Cooper", "Rocket", "rocket.png"),
         new MarvelCharacters("Karen Gillan", "Nebula", "nebula.png")
      };

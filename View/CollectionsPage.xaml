@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyFirstMauiMobileApp.Model.Entities"
              x:Class="MyFirstMauiMobileApp.View.CollectionsPage"
-             Title="CollectionsPage">
+             Title="{Binding Title}">
 
     <VerticalStackLayout>
 
