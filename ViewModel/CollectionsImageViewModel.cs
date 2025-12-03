@@ -16,10 +16,10 @@ public partial class CollectionsImageViewModel : ObservableObject
     public CollectionsImageViewModel()
     {
         _marvelcharacters = MarvelCharacters.GetMovies();
-        LoadMovies();
+        LoadCharacters();
     }
 
-    private void LoadMovies()
+    private void LoadCharacters()
     {
         try
         {

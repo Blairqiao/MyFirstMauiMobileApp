@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstMauiMobileApp.Model.Titles
 {
-    internal class TitleCollectionsImages
+    public class TitleCollectionsImages
     {
         public static string Title { get; } = "Collections w/ Images";
     }

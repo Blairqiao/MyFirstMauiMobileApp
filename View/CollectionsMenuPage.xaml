@@ -52,7 +52,7 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding CollectionButton}"
-                    Command="{Binding }"/>
+                    Command="{Binding CollectionButtonClickedCommand}"/>
 
             <Button Grid.Row="3" 
                     Grid.Column="0"

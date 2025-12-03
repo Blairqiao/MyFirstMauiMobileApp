@@ -27,11 +27,11 @@ namespace MyFirstMauiMobileApp.ViewModel
             await Shell.Current.GoToAsync(nameof(CollectionsImagesPage));
         }
 
-        //[RelayCommand]
-        //private async Task ActivityIndicatorClicked()
-        //{
-        //    await Shell.Current.GoToAsync(nameof(ImagesActivityIndicatorPage));
-        //}
+        [RelayCommand]
+        private async Task CollectionButtonClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(CollectionsButtonPage));
+        }
 
         //[RelayCommand]
         //private async Task CollectionIconClicked()

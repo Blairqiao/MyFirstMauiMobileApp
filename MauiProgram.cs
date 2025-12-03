@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using MyFirstMauiMobileApp.View;
+using MyFirstMauiMobileApp.ViewModel;
 
 namespace MyFirstMauiMobileApp
 {
@@ -18,6 +20,17 @@ namespace MyFirstMauiMobileApp
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
+
+            try
+            {
+                builder.Services.AddSingleton<CollectionsButtonPage>();
+                builder.Services.AddSingleton<CollectionsButtonViewModel>();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
             return builder.Build();
         }
     }

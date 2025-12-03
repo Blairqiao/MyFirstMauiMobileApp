@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MyFirstMauiMobileApp.Model.Entities"
+             x:Class="MyFirstMauiMobileApp.View.CollectionsButtonPage"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" x:Name="Addbtn" Command="{Binding AddCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto, Auto, *" ColumnDefinitions="*" >
+
+        <FlexLayout Grid.Row="0" Direction="Column" AlignContent="Center">
+            <Label Text="Movies" FontSize="50" FontAttributes="Bold,Italic"/>
+        </FlexLayout>
+
+        <BoxView Grid.Row="1" HeightRequest="2" BackgroundColor="Black"/>
+
+        <RefreshView Grid.Row="2"
+                     IsRefreshing="{Binding isBusy, Mode=TwoWay}"
+                     Command="{Binding RefreshCommand}">
+
+            <CollectionView x:Name="ItemCollectionView"
+                            ItemsSource="{Binding MovieCollection, Mode=TwoWay}"
+                            SelectionMode="None"
+                            ItemsLayout="VerticalList">
+
+                <CollectionView.ItemTemplate>
+                    
+                    <DataTemplate x:DataType="model:MarvelMovies">
+                        <Grid RowDefinitions="Auto, 2"
+                              ColumnDefinitions="*, Auto"
+                              Padding="2">
+
+                            <Label Grid.Row="0" Grid.Column="0"
+                                   Text="{Binding NameofMovie, Mode=TwoWay}"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Start"
+                                   FontSize="Medium"
+                                   Margin="10,0,0,0"/>
+
+
+                            <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="10">
+                                <Button Text="Update"
+                                        Command="{Binding Path=BindingContext.UpdateCommand, Source={Reference ItemCollectionView}}"
+                                        CommandParameter="{Binding .}"/>
+                                <Button Text="Delete"
+                                        Command="{Binding Path=BindingContext.DeleteCommand, Source={Reference ItemCollectionView}}"
+                                        CommandParameter="{Binding .}"/>
+                            </HorizontalStackLayout>
+
+                            <BoxView Margin="0, 150, 0,0" HeightRequest="2" BackgroundColor="Black"/>
+
+                        </Grid>
+                    </DataTemplate>
+                    
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </RefreshView>
+    </Grid>
+
+</ContentPage>
