@@ -21,7 +21,7 @@ namespace MyFirstMauiMobileApp.ViewModel
         private string movieName = string.Empty;
 
         [RelayCommand]
-        private async Task SaveButtonClicked()
+        private async Task SaveClicked()
         {
             if (string.IsNullOrWhiteSpace(MovieName))
             {

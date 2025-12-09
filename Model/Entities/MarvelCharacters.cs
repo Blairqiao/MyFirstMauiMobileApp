@@ -25,7 +25,7 @@ public class MarvelCharacters
         NameofActor = actor;
         ImagePath = image;
     } 
-    public static List<MarvelCharacters> GetMovies() => new List<MarvelCharacters>
+    public static List<MarvelCharacters> GetCharacters() => new List<MarvelCharacters>
     {
         new MarvelCharacters("Chris Pratt", "Starlord", "starlord.png"),
         new MarvelCharacters("Zoe Saldana", "Gamora", "gamora.png"),

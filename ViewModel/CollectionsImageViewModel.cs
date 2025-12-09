@@ -15,7 +15,7 @@ public partial class CollectionsImageViewModel : ObservableObject
 
     public CollectionsImageViewModel()
     {
-        _marvelcharacters = MarvelCharacters.GetMovies();
+        _marvelcharacters = MarvelCharacters.GetCharacters();
         LoadCharacters();
     }
 

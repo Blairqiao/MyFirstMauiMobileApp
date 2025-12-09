@@ -7,8 +7,8 @@
     
     <VerticalStackLayout BackgroundColor="White">
         <CollectionView x:Name="ItemsListView"
-                 ItemsSource="{Binding MarvelCharactersCollection}"
-                 SelectionMode="None">
+                        ItemsSource="{Binding MarvelCharactersCollection}"
+                        SelectionMode="None">
 
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical"/>
