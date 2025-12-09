@@ -63,7 +63,7 @@
                                         CommandParameter="{Binding .}"/>
                             </HorizontalStackLayout>
 
-                            <BoxView Margin="0, 150, 0,0" HeightRequest="2" BackgroundColor="Black"/>
+                            <BoxView Grid.Row ="1" Grid.ColumnSpan="2" HeightRequest="2" BackgroundColor="Black"/>
 
                         </Grid>
                     </DataTemplate>

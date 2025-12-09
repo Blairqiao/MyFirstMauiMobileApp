@@ -32,12 +32,11 @@ namespace MyFirstMauiMobileApp.ViewModel
         {
             await Shell.Current.GoToAsync(nameof(CollectionsButtonPage));
         }
-
-        //[RelayCommand]
-        //private async Task CollectionIconClicked()
-        //{
-        //    await Shell.Current.GoToAsync(nameof());
-        //}
+        [RelayCommand]
+        private async Task CollectionIconClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(CollectionsIconPage));
+        }
 
         public CollectionsMenuViewModel()
         {
