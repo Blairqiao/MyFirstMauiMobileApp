@@ -9,6 +9,7 @@ namespace MyFirstMauiMobileApp.Model.Titles
     public class TitleCollectionsButton
     {
         public static string Title { get; } = "Collections w/ Buttons";
+        public static string IconTitle { get; } = "Collections w/ Icons";
         public static string AddTitle { get; } = "Add Movie";
         public static string EditTitle{ get; } = "Edit Movie";
     }

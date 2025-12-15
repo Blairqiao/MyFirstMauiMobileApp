@@ -3,17 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:MyFirstMauiMobileApp.Model.Entities"
              x:Class="MyFirstMauiMobileApp.View.CollectionsIconPage"
-             Title="{Binding Title}">
+             Title="{Binding IconTitle}">
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="Margin" Value="4, 15, 4, 4" />
+            <Setter Property="Margin" Value="4, 4, 4, 4" />
             <Setter Property="HeightRequest" Value="50" />
             <Setter Property="CornerRadius" Value="10" />
-            <Setter Property="BackgroundColor" Value="White" />
-            <Setter Property="TextColor" Value="White" />
-            <Setter Property="FontAttributes" Value="Bold" />
-            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="BackgroundColor" Value="Transparent" />
         </Style>
 
     </ContentPage.Resources>
@@ -25,7 +22,7 @@
     <Grid RowDefinitions="Auto, Auto, *" ColumnDefinitions="*" >
 
         <FlexLayout Grid.Row="0" Direction="Column" AlignContent="Center">
-            <Label Text="Movies" FontSize="50" FontAttributes="Bold,Italic"/>
+            <Label Text="Movies" FontSize="50" FontAttributes="Bold,Italic" HorizontalTextAlignment="Center"/>
         </FlexLayout>
 
         <BoxView Grid.Row="1" HeightRequest="2" BackgroundColor="Black"/>
@@ -51,16 +48,16 @@
                                    FontAttributes="Bold"
                                    HorizontalTextAlignment="Start"
                                    FontSize="Medium"
-                                   Margin="10,0,0,0"/>
+                                   Margin="10,15,0,15"/>
 
 
                             <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="10">
                                 <Button Command="{Binding Path=BindingContext.UpdateCommand, Source={Reference ItemCollectionView}}"
                                         CommandParameter="{Binding .}"
-                                        ImageSource="iconsedit.png"/> 
+                                        ImageSource="{Binding EditButton}"/> 
                                 <Button Command="{Binding Path=BindingContext.DeleteCommand, Source={Reference ItemCollectionView}}"
                                         CommandParameter="{Binding .}"
-                                        ImageSource="iconsdelete.png"/>
+                                        ImageSource="{Binding DeleteButton}"/>
                             </HorizontalStackLayout>
 
                             <BoxView Grid.Row ="1" Grid.ColumnSpan="2" HeightRequest="2" BackgroundColor="Black"/>

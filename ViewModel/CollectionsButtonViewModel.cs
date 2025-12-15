@@ -5,12 +5,7 @@ using MyFirstMauiMobileApp.Model.Entities;
 using MyFirstMauiMobileApp.Model.Messages;
 using MyFirstMauiMobileApp.Model.Titles;
 using MyFirstMauiMobileApp.View;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
@@ -18,6 +13,8 @@ namespace MyFirstMauiMobileApp.ViewModel
     {
 
         public string Title => TitleCollectionsButton.Title;
+        public string IconTitle => TitleCollectionsButton.IconTitle;
+
 
         [ObservableProperty]
         private bool isBusy;

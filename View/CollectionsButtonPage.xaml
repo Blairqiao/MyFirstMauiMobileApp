@@ -7,7 +7,7 @@
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="Margin" Value="4, 15, 4, 4" />
+            <Setter Property="Margin" Value="4, 10, 4, 10" />
             <Setter Property="HeightRequest" Value="50" />
             <Setter Property="CornerRadius" Value="10" />
             <Setter Property="BackgroundColor" Value="Crimson" />
@@ -25,7 +25,7 @@
     <Grid RowDefinitions="Auto, Auto, *" ColumnDefinitions="*" >
 
         <FlexLayout Grid.Row="0" Direction="Column" AlignContent="Center">
-            <Label Text="Movies" FontSize="50" FontAttributes="Bold,Italic"/>
+            <Label Text="Movies" FontSize="50" FontAttributes="Bold,Italic" HorizontalTextAlignment="Center"/>
         </FlexLayout>
 
         <BoxView Grid.Row="1" HeightRequest="2" BackgroundColor="Black"/>
@@ -51,7 +51,7 @@
                                    FontAttributes="Bold"
                                    HorizontalTextAlignment="Start"
                                    FontSize="Medium"
-                                   Margin="10,0,0,0"/>
+                                   Margin="10,20,0,0"/>
 
 
                             <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Spacing="10">

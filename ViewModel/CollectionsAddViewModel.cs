@@ -15,7 +15,7 @@ namespace MyFirstMauiMobileApp.ViewModel
     public partial class CollectionsAddViewModel : ObservableObject
     {
 
-        public string Title = TitleCollectionsButton.AddTitle;
+        public string Title => TitleCollectionsButton.AddTitle;
 
         [ObservableProperty]
         private string movieName = string.Empty;

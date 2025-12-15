@@ -7,8 +7,8 @@ namespace MyFirstMauiMobileApp.Model.Entities
         public string NameofMovie { get; set; }
 
         //Image Buttons
-        //public ImageSource EditButton { get; } = Buttons.ButtonEdit;
-        //public ImageSource DeleteButton { get; } = Buttons.ButtonDelete;
+        public string EditButton { get; } = "iconsedit.png";
+        public string DeleteButton { get; } = "iconsdelete.png";
 
         public MarvelMovies()
         {
