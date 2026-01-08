@@ -16,29 +16,26 @@ namespace MyFirstMauiMobileApp.ViewModel
         [ObservableProperty]
         private double sliderValue;
 
-        public double BoxOpacity;
-        public string LabelText;        
+        [ObservableProperty]
+        private string labelText;       
 
         [RelayCommand]
         private void SetToHalf()
         {
             SliderValue = 0.5;
+            LabelText = $"Value of the slider is {SliderValue:F2}";
         }
 
         public ControlsSliderViewModel()
         {
             SliderValue = 1;
-            BoxOpacity = SliderValue;
-            LabelText = $"Value of the slider is {SliderValue:F2}";
         }
 
-        private void OnSliderValueChanged(object sender, ValueChangedEventArgs e) => UpdateVisuals(e.NewValue);
+        partial void OnSliderValueChanged(double value) => UpdateVisuals(value);
 
         private void UpdateVisuals(double Value)
         {
-            BoxOpacity = Value;
             LabelText = $"Value of the slider is {Value:F2}";
-
         }
 
 

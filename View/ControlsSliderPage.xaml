@@ -6,9 +6,9 @@
 
     <VerticalStackLayout Padding="20" Spacing="20">
 
-        <BoxView Color="Blue" HeightRequest="25" HorizontalOptions="Fill"/>
+        <BoxView Color="Blue" HeightRequest="25" HorizontalOptions="Fill" Opacity="{Binding SliderValue}"/>
 
-        <Slider Minimum="0" Maximum="1" Value="{Binding SliderValue, Mode=TwoWay}"
+        <Slider Minimum="0" Maximum="1" Value="{Binding SliderValue}"
                 ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
                 HorizontalOptions="Fill"/>
 
@@ -19,7 +19,7 @@
                FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
                HorizontalOptions="Center"/>
 
-        <Label Text="{Binding SliderValue}"
+        <Label Text="{Binding LabelText}"
                 FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
                 HorizontalOptions="Center"/>
 
