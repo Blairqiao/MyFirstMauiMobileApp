@@ -21,7 +21,7 @@ namespace MyFirstMauiMobileApp.ViewModel
         [RelayCommand]
         private async Task SliderClicked()
         {
-            await Shell.Current.GoToAsync(nameof(ControlsSliderPage));
+            await Shell.Current.GoToAsync(nameof(ControlsSliderMenuPage));
         }
 
      

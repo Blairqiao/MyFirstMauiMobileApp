@@ -2,16 +2,18 @@
 using CommunityToolkit.Mvvm.Input;
 using MyFirstMauiMobileApp.Model.Titles;
 using MyFirstMauiMobileApp.View;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
     public partial class ControlsSliderViewModel : ObservableObject
     {
+
+        public string Title => TitleControl.SliderVMTitle;
+        public string IncreasingColor => "LightBlue";
+        public string DecreasingColor => "Orange";
+        public string ThumbColor => "DarkGreen";
+
 
         [ObservableProperty]
         private double sliderValue;

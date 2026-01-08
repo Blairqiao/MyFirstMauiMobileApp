@@ -2,30 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMauiMobileApp.View.ControlsSliderPage"
-             Title="ControlsSliderPage">
+             Title="{Binding Title}">
 
     <VerticalStackLayout Padding="20" Spacing="20">
 
-        <BoxView Color="Blue" HeightRequest="25" HorizontalOptions="Fill" Opacity="{Binding SliderValue}"/>
+        <BoxView Color="Magenta" HeightRequest="25" HorizontalOptions="Fill" Opacity="{Binding SliderValue}"/>
 
         <Slider Minimum="0" Maximum="1" Value="{Binding SliderValue}"
-                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
+                ThumbColor="{Binding ThumbColor}" MaximumTrackColor="{Binding DecreasingColor}" MinimumTrackColor="{Binding IncreasingColor}"
                 HorizontalOptions="Fill"/>
 
-        <Label FontAttributes="Bold"
-               FontSize="Large" HorizontalOptions="Center"/>
-
+        <Label Text="{Binding LabelText}"
+                FontAttributes="Bold" FontSize="Large" TextColor="Black"
+                HorizontalOptions="Center"/>
+        
         <Label Text="Moving Slider Will Change Opacity"
                FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
                HorizontalOptions="Center"/>
 
-        <Label Text="{Binding LabelText}"
-                FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
-                HorizontalOptions="Center"/>
-
         <Button Text="Set Slider to 50%"
                 HorizontalOptions="Center"
-                BackgroundColor="Purple"
+                BackgroundColor="DarkCyan"
                 Command="{Binding SetToHalfCommand}"/>
 
     </VerticalStackLayout>

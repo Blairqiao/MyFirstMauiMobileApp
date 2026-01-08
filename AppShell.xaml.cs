@@ -45,7 +45,12 @@ namespace MyFirstMauiMobileApp
             Routing.RegisterRoute(nameof(ControlsMenuPage), typeof(ControlsMenuPage));
 
             //Controls Children
+            Routing.RegisterRoute(nameof(ControlsSliderMenuPage), typeof(ControlsSliderMenuPage));
+
+            //Slider Children
             Routing.RegisterRoute(nameof(ControlsSliderPage), typeof(ControlsSliderPage));
+            Routing.RegisterRoute(nameof(ControlsSliderXAMLpage), typeof(ControlsSliderXAMLpage));
+
 
 
         }

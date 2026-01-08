@@ -74,6 +74,9 @@
 	  <Compile Update="MainPageOld.xaml.cs">
 	    <DependentUpon>MainPageOld.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\ControlsSliderPage.xaml.cs">
+	    <DependentUpon>ControlsSliderPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -104,7 +107,13 @@
 	  <MauiXaml Update="View\ControlsMenuPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\ControlsSliderMenuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\ControlsSliderPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\ControlsSliderXAMLpage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\ImagesActivityIndicatorPage.xaml">
