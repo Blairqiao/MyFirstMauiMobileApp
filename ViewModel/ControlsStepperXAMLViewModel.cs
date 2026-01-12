@@ -11,7 +11,7 @@ namespace MyFirstMauiMobileApp.ViewModel
     public partial class ControlsStepperXAMLViewModel : ObservableObject
     {
 
-        public string Title => TitleControl.StepperVMTitle;
+        public string Title => TitleControl.StepperXAMLTitle;
 
     }
 }

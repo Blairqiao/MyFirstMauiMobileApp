@@ -15,8 +15,7 @@
               HorizontalOptions="Center"
               VerticalOptions="End">
 
-            <Label x:Name="RotatingLabel"
-                     Text="Rotating Text"
+            <Label   Text="Rotating Text"
                      WidthRequest="200"
                      FontSize="30" FontAttributes="Bold,Italic"
                      HorizontalOptions="Center" VerticalOptions="Center"

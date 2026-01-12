@@ -13,7 +13,7 @@ namespace MyFirstMauiMobileApp.ViewModel
     public partial class ControlsStepperMenuViewModel : ObservableObject
     {
 
-        public string Title => TitleControl.SliderMenuTitle;
+        public string Title => TitleControl.StepperMenuTitle;
 
         [RelayCommand]
         private async Task VMClicked()
