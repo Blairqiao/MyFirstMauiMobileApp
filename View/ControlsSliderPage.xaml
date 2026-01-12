@@ -6,10 +6,13 @@
 
     <VerticalStackLayout Padding="20" Spacing="20">
 
-        <BoxView Color="Magenta" HeightRequest="25" HorizontalOptions="Fill" Opacity="{Binding SliderValue}"/>
+        <BoxView Color="Magenta" HeightRequest="25" 
+                 HorizontalOptions="Fill" Opacity="{Binding SliderValue}"/>
 
         <Slider Minimum="0" Maximum="1" Value="{Binding SliderValue}"
-                ThumbColor="{Binding ThumbColor}" MaximumTrackColor="{Binding DecreasingColor}" MinimumTrackColor="{Binding IncreasingColor}"
+                ThumbColor="{Binding ThumbColor}" 
+                MaximumTrackColor="{Binding DecreasingColor}"
+                MinimumTrackColor="{Binding IncreasingColor}"
                 HorizontalOptions="Fill"/>
 
         <Label Text="{Binding LabelText}"
