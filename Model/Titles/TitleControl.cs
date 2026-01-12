@@ -16,10 +16,15 @@ namespace MyFirstMauiMobileApp.Model.Titles
         //public static string Controls { get; } = "Controls";
         //public static string SQL_Lite { get; } = "SQL Lite";
 
-
+        // Slider
         public static string SliderMenuTitle { get; } = "Slider Menu";
         public static string SliderVMTitle { get; } = "Slider VM";
         public static string SliderXAMLTitle { get; } = "Slider XAML";
+
+        //Stepper
+        public static string StepperMenuTitle { get; } = "Stepper Menu";
+        public static string StepperVMTitle { get; } = "Stepper VM";
+        public static string StepperXAMLTitle { get; } = "Stepper XAML";
 
     }
 }

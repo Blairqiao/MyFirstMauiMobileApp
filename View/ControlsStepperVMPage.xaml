@@ -2,36 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMauiMobileApp.View.ControlsStepperVMPage"
-             Title="ControlsStepperVMPage">
+             Title="{Binding Title}">
 
     
     <Grid Margin="20"
-          RowDefinitions="Auto, Auto"
+          RowDefinitions="*, *"
           ColumnDefinitions="*">
 
         <Grid Grid.Row="0"
               HeightRequest="200"
               WidthRequest="200"
               HorizontalOptions="Center"
-              VerticalOptions="Center">
+              VerticalOptions="End">
 
             <Label x:Name="RotatingLabel"
                      Text="Rotating Text"
-                     FontSize="Large" FontAttributes="Bold,Italic"
+                     WidthRequest="200"
+                     FontSize="30" FontAttributes="Bold,Italic"
                      HorizontalOptions="Center" VerticalOptions="Center"
                      AnchorX="0.5" AnchorY="0.5"
-                     Rotation="{Binding StepperValue}"/>
+                     Rotation="{Binding StepperValue}"
+                     TextColor="{Binding TextColor}"/>
 
         </Grid>
 
         <VerticalStackLayout Grid.Row="1"
                              Spacing="10"
-                             HorizontalOptions="Center">
+                             HorizontalOptions="Center"
+                             VerticalOptions="End">
 
             <Stepper Minimum="0" Maximum="360"
                      Increment="10" Value="{Binding StepperValue}"
                      WidthRequest="300"
-                     HorizontalOptions="Center"/>
+                     HorizontalOptions="Center"
+                     BackgroundColor="#36ff6b"/>
 
             <Label FontSize="Large" FontAttributes="Bold"
                    HorizontalOptions="Center"

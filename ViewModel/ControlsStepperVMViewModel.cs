@@ -12,7 +12,7 @@ namespace MyFirstMauiMobileApp.ViewModel
     public partial class ControlsStepperVMViewModel : ObservableObject
     {
 
-        //public string Title => TitleControl.SliderVMTitle;
+        public string Title => TitleControl.StepperVMTitle;
 
 
         [ObservableProperty]
@@ -21,18 +21,30 @@ namespace MyFirstMauiMobileApp.ViewModel
         [ObservableProperty]
         private string labelText;
 
+        [ObservableProperty]
+        private string textColor;
+
+        Random random = new Random();
+
 
         public ControlsStepperVMViewModel()
         {
             StepperValue = 0;
-            LabelText = $"Value of the stepper is {StepperValue:F0}";
+            LabelText = $"The Stepper Value is {StepperValue:F0}";
+            textColor = "#7b43de";
         }
 
         partial void OnStepperValueChanged(double value) => UpdateVisuals(value);
 
         private void UpdateVisuals(double Value)
         {
-            LabelText = $"Value of the stepper is {Value:F0}";
+            LabelText = $"The Stepper Value is {Value:F0}";
+            int r = random.Next(0, 255);
+            int g = random.Next(0, 255);
+            int b = random.Next(0, 255);
+            TextColor =  $"#{r:X2}{g:X2}{b:X2}";
+
+
         }
 
 
