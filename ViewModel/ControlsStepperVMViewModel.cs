@@ -1,11 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
 using MyFirstMauiMobileApp.Model.Titles;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
@@ -43,8 +38,6 @@ namespace MyFirstMauiMobileApp.ViewModel
             int g = random.Next(0, 255);
             int b = random.Next(0, 255);
             TextColor =  $"#{r:X2}{g:X2}{b:X2}";
-
-
         }
 
 

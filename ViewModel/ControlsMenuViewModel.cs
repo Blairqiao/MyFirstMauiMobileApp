@@ -30,6 +30,13 @@ namespace MyFirstMauiMobileApp.ViewModel
             await Shell.Current.GoToAsync(nameof(ControlsStepperMenuPage));
         }
 
+
+        [RelayCommand]
+        private async Task SwitchClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlsSwitchMenuPage));
+        }
+
         public ControlsMenuViewModel()
         {
 

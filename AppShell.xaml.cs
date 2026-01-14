@@ -47,6 +47,7 @@ namespace MyFirstMauiMobileApp
             //Controls Children
             Routing.RegisterRoute(nameof(ControlsSliderMenuPage), typeof(ControlsSliderMenuPage));
             Routing.RegisterRoute(nameof(ControlsStepperMenuPage), typeof(ControlsStepperMenuPage));
+            Routing.RegisterRoute(nameof(ControlsSwitchMenuPage), typeof(ControlsSwitchMenuPage));
 
 
             //Slider Children
@@ -56,6 +57,10 @@ namespace MyFirstMauiMobileApp
             //Stepper Children
             Routing.RegisterRoute(nameof(ControlsStepperVMPage), typeof(ControlsStepperVMPage));
             Routing.RegisterRoute(nameof(ControlsStepperXAMLPage), typeof(ControlsStepperXAMLPage));
+
+            //Switch Children
+            Routing.RegisterRoute(nameof(ControlsSwitchVMPage), typeof(ControlsSwitchVMPage));
+            Routing.RegisterRoute(nameof(ControlsSwitchXAMLPage), typeof(ControlsSwitchXAMLPage));
 
 
         }

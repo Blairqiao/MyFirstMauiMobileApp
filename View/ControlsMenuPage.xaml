@@ -47,8 +47,8 @@
 
             <Button Grid.Row="1" 
                     Grid.Column="1" 
-                    Text="{Binding Vertical_Stack}"
-                    Command="{Binding VerticalStackClickedCommand}"/>
+                    Text="{Binding Switch}"
+                    Command="{Binding SwitchClickedCommand}"/>
 
             <Button Grid.Row="2" 
                     Grid.Column="1"
