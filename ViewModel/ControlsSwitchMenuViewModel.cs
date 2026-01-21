@@ -13,7 +13,7 @@ namespace MyFirstMauiMobileApp.ViewModel
     public partial class ControlsSwitchMenuViewModel : ObservableObject
     {
 
-        public string Title => TitleControl.SliderMenuTitle;
+        public string Title => TitleControl.SwitchMenuTitle;
 
         [RelayCommand]
         private async Task VMClicked()

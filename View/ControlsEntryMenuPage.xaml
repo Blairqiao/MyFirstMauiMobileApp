@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMauiMobileApp.View.ControlsSwitchMenuPage"
+             x:Class="MyFirstMauiMobileApp.View.ControlsEntryMenuPage"
              Title="{Binding Title}">
-
 
     <ContentPage.Resources>
 
@@ -24,14 +23,15 @@
 
         <Button Grid.Row="0" 
                 Grid.Column="0" 
-                Text="VM Switch"
+                Text="VM Entry"
                 Command="{Binding VMClickedCommand}"/>
 
         <Button Grid.Row="0" 
                 Grid.Column="1" 
-                Text="XAML Switch"
+                Text="XAML Entry"
                 Command="{Binding XAMLClickedCommand}"/>
 
     </VerticalStackLayout>
+
 
 </ContentPage>

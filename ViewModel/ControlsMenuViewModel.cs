@@ -17,7 +17,9 @@ namespace MyFirstMauiMobileApp.ViewModel
         public string Slider => TitleControl.Slider;
         public string Stepper => TitleControl.Stepper;
         public string Switch => TitleControl.Switch;
-        
+        public string Entry => TitleControl.Entry;
+
+
         [RelayCommand]
         private async Task SliderClicked()
         {
@@ -35,6 +37,13 @@ namespace MyFirstMauiMobileApp.ViewModel
         private async Task SwitchClicked()
         {
             await Shell.Current.GoToAsync(nameof(ControlsSwitchMenuPage));
+        }
+
+
+        [RelayCommand]
+        private async Task EntryClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlsEntryMenuPage));
         }
 
         public ControlsMenuViewModel()

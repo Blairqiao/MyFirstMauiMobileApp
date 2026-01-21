@@ -23,12 +23,12 @@
 
         <Button Grid.Row="0" 
                 Grid.Column="0" 
-                Text="VM Slider"
+                Text="VM Stepper"
                 Command="{Binding VMClickedCommand}"/>
 
         <Button Grid.Row="0" 
                 Grid.Column="1" 
-                Text="XAML Slider"
+                Text="XAML Stepper"
                 Command="{Binding XAMLClickedCommand}"/>
 
     </VerticalStackLayout>

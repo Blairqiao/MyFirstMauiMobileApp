@@ -1,15 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MyFirstMauiMobileApp.Model.Titles;
+
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
     public partial class ControlsSwitchVMViewModel : ObservableObject
     {
 
+        public string Title => TitleControl.SwitchVMTitle;
 
         [ObservableProperty]
         private bool isOn;
@@ -30,7 +28,6 @@ namespace MyFirstMauiMobileApp.ViewModel
                        ? Color.FromRgb(0, 0, 255)
                        : Color.FromRgb(255, 0, 0);
         }
-
 
     }
 }

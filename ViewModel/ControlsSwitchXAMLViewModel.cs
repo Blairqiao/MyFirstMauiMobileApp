@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MyFirstMauiMobileApp.Model.Titles;
+
 
 namespace MyFirstMauiMobileApp.ViewModel
 {
-    internal class ControlsSwitchXAMLViewModel
+    public partial class ControlsSwitchXAMLViewModel
     {
+
+        public string Title => TitleControl.SwitchXAMLTitle;
+
     }
 }
